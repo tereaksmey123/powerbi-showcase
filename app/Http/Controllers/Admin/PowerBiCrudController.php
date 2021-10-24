@@ -70,7 +70,7 @@ class PowerBiCrudController extends CrudController
     protected function setupCreateOperation()
     {
         CRUD::setValidation(PowerBiRequest::class);
-        CRUD::field('scorecard_name')->type('number');
+        CRUD::field('scorecard_name')->type('text');
         CRUD::field('step')->type('number')->wrapper(['class' => 'form-group col-md-4']);
         CRUD::addField([   // select_from_array
             'name'        => 'score',
